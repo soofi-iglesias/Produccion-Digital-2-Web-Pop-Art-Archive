@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+
+    /* TEXTOS */
+    .title-hero {
+        @apply text-almost-black text-8xl font-bold font-sans tracking-[4.80px];
+    }
+
+    .title-section {
+        @apply text-almost-black text-5xl font-bold font-sans;
+    }
+
+    .title-section-navy {
+        @apply text-navy text-5xl font-bold font-sans;
+    }
+
+    .title-section-light {
+        @apply text-brand-white text-5xl font-bold font-sans;
+    }
+
+    .title-card {
+        @apply text-almost-black text-2xl font-bold font-sans;
+    }
+
+    .title-card-light {
+        @apply text-brand-white text-2xl font-bold font-sans;
+    }
+
+    .label-section {
+        @apply text-pop-celeste text-xl font-bold font-sans uppercase tracking-wide;
+    }
+
+    .body-text {
+        @apply text-almost-black text-lg font-normal font-sans;
+    }
+
+    .body-small {
+        @apply text-almost-black text-sm font-normal font-sans;
+    }
+
+    .body-xs {
+        @apply text-almost-black text-xs font-normal font-sans;
+    }
+
+    .artist-meta {
+        @apply text-navy text-sm font-bold font-sans uppercase leading-4 tracking-wide;
+    }
+
+    /* BOTONES */
+    .btn-primary {
+        @apply px-8 py-4 bg-navy text-brand-white font-bold font-display text-xl leading-5 tracking-wide hover:opacity-90 transition-opacity;
+    }
+
+    .btn-secondary {
+        @apply px-8 py-4 outline outline-2 outline-navy text-navy font-bold font-display text-xl leading-5 tracking-wide hover:bg-navy hover:text-brand-white transition-all;
+    }
+
+    .btn-light {
+        @apply px-8 py-4 outline outline-2 outline-brand-white text-brand-white font-bold font-display text-xl leading-5 tracking-wide hover:bg-brand-white hover:text-navy transition-all;
+    }
+
+    /* LINKS DE NAVEGACIÓN */
+    .nav-link {
+        @apply px-2 py-3 text-navy text-base font-medium font-display leading-4 hover:font-bold transition-all;
+    }
+    
+    .nav-link-active {
+        @apply px-2 py-3 text-navy text-base font-bold font-display leading-4;
+    }
+
+    /* CARDS */
+    .card {
+        @apply p-8 bg-cream shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)] flex flex-col items-center gap-6;
+    }
+    .card-pop {
+        @apply card outline outline-4;
+    }
+
+
+    /* SECCIONES */
+    .section-light {
+        @apply w-full px-20 py-20 bg-cream;
+    }
+
+    .section-white {
+        @apply w-full px-20 py-20 bg-brand-white;
+    }
+
+    .section-dark {
+        @apply w-full px-20 py-20 bg-navy;
+    }
+
+}
+
+
+@layer utilities {
+
+    /* Ocultar scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
