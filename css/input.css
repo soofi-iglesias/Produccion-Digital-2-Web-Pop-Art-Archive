@@ -55,22 +55,75 @@
         @apply text-navy text-sm font-bold font-sans uppercase leading-4 tracking-wide;
     }
 
+
     /* BOTONES */
+
     .btn-primary {
-        @apply px-8 py-4 bg-navy text-brand-white font-bold font-display text-xl leading-5 tracking-wide hover:opacity-90 transition-opacity;
+        @apply px-8 py-4 bg-navy text-brand-white font-bold font-sans text-xl tracking-wide border-2 border-navy inline-flex justify-center items-center transition-all duration-200;
+    }
+
+    .btn-primary:hover {
+        @apply bg-brand-white text-navy border-navy;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px #000;
+    }
+
+    .btn-primary-light {
+        @apply px-8 py-4 bg-brand-white text-navy font-bold font-sans text-xl tracking-wide border-2 border-brand-white inline-flex justify-center items-center transition-all duration-200;
+    }
+
+    .btn-primary-light:hover {
+        @apply bg-navy text-brand-white border-white;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px white;
     }
 
     .btn-secondary {
-        @apply px-8 py-4 outline outline-2 outline-navy text-navy font-bold font-display text-xl leading-5 tracking-wide hover:bg-navy hover:text-brand-white transition-all;
+        @apply px-8 py-4 text-navy font-bold font-sans text-xl tracking-wide border-2 border-navy inline-flex justify-center items-center transition-all duration-200;
     }
 
-    .btn-light {
-        @apply px-8 py-4 outline outline-2 outline-brand-white text-brand-white font-bold font-display text-xl leading-5 tracking-wide hover:bg-brand-white hover:text-navy transition-all;
+    .btn-secondary:hover {
+        @apply bg-navy text-brand-white;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px #000;
     }
+
+    .btn-secondary-ghost {
+        @apply px-8 py-4 text-navy font-bold font-sans text-xl tracking-wide inline-flex justify-center items-center transition-all duration-200;
+    }
+
+    .btn-secondary-ghost:hover {
+        @apply underline;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px #000;
+    }
+
+    .btn-sm { /* SMALL → filtros, paginación */
+        @apply px-4 py-2 text-sm;
+    }
+
+    .btn-md { /* MEDIUM → default */
+        @apply px-6 py-3 text-base;
+    }
+
+    .btn-lg { /* LARGE → hero CTA */
+        @apply px-8 py-4 text-xl;
+    }
+
+    .btn-filter {
+        @apply px-4 py-3 text-xl text-navy font-normal font-sans tracking-wide border-2 border-navy inline-flex justify-center items-center transition-all duration-200;
+    }
+
+    .btn-filter:hover {
+        @apply bg-navy text-brand-white;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px #000;
+    }
+
 
     /* LINKS DE NAVEGACIÓN */
     .nav-link {
-        @apply px-2 py-3 text-navy text-base font-medium font-display leading-4 hover:font-bold transition-all;
+        @apply px-2 py-3 text-navy font-medium hover:bg-navy hover:text-brand-white transition-all;
     }
     
     .nav-link-active {
@@ -97,6 +150,21 @@
 
     .section-dark {
         @apply w-full px-20 py-20 bg-navy;
+    }
+
+    /* PAGINACIÓN */
+    .pagination-item {
+        @apply px-4 py-2 border-2 border-navy font-bold font-sans text-sm text-navy transition-all duration-200;
+    }
+
+    .pagination-item:hover {
+        @apply bg-pop-yellow text-navy;
+        transform: translateY(-2px);
+            box-shadow: 3px 3px 0px 0px #000;
+    }
+
+    .pagination-item.active {
+        @apply bg-navy text-brand-white;
     }
 
 }

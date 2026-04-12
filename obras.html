@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obras - Pop Art Archive</title>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="css/output.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-brand-white text-navy font-body">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full h-20 bg-brand-white border-b-2 border-navy
+                       shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]
+                       flex items-center justify-between px-20 z-50">
+    
+        <!-- Logo -->
+        <a href="index.html"
+            class="text-navy text-2xl font-bold font-display leading-7 hover:opacity-80 transition-opacity">
+            <img src="img/Logo PAA.svg" alt="Pop Art Archive" class="h-26 w-auto" />
+    
+        </a>
+    
+        <!-- Links -->
+        <nav class="flex items-center gap-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="explorar.html" class="nav-link">Explorar</a>
+            <a href="movimiento.html" class="nav-link">Movimiento</a>
+            <a href="artistas.html" class="nav-link">Artistas</a>
+            <a href="obras.html" class="nav-link-active">Obras</a>
+            <a href="timeline.html" class="nav-link">Línea de tiempo</a>
+            <a href="contacto.php" class="nav-link">Contacto</a>
+        </nav>
+    
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section class="section-white border-b-8 border-pop-green flex items-start gap-40">
+
+        
+            <!-- Texto -->
+            <div class="flex-1 flex flex-col gap-40 py-40">
+        
+                <div class="flex-1 flex flex-col gap-12">
+                
+                    <div class="flex flex-col gap-2">
+                        <span class="w-fit bg-pop-green text-white px-4 py-1 text-lg font-bold uppercase tracking-wide">
+                            Artistas del Pop Art
+                        </span>
+                
+                        <h1 class="title-section text-navy">
+                            Referentes que definieron el lenguaje visual del movimiento
+                        </h1>
+
+                    </div>
+                    
+                    <p class="body-text max-w-xl">
+                        Explorá a los artistas más influyentes del Pop Art, sus estilos, obras y el impacto que tuvieron en la
+                        cultura visual contemporánea.
+                    </p>
+                </div>
+        
+                <a href="#listado-artistas" class="w-fit btn-primary">
+                    Conocer a los artistas
+                </a>
+        
+            </div>
+
+            <!-- Imagen -->
+            <img src="img/Pagina Obras//Hero Image Obras.png" class="w-auto h-[700px] object-cover ml-auto" />
+        
+        </section>
+
+        <!-- BUSCADOR Y LISTADO DE ARTISTAS-->
+        <section class="section-white flex flex-col items-center gap-16">
+        
+            <!-- HEADER -->
+            <div class="w-full flex flex-col items-start gap-6">
+        
+                <div class="w-full flex flex-col items-start gap-4">
+                
+                    <!-- LABEL -->
+                    <span
+                        class="bg-pop-green text-brand-white px-4 py-1 text-xl font-bold font-sans uppercase tracking-wide inline-block">
+                        Explorar artistas
+                    </span>
+                
+                    <!-- SEARCH + FILTROS -->
+                    <div class="w-full flex items-center gap-6">
+                
+                        <!-- SEARCH REAL -->
+                        <input type="text" placeholder="Buscar artista..."
+                            class="flex-1 px-4 py-3 text-sm bg-gray-100 border-2 border-navy outline-none font-sans" />
+                
+                        <!-- FILTROS -->
+                        <div class="flex items-center gap-3">
+                
+                            <button class="btn-filter text-sm">A-Z</button>
+                            <button class="btn-filter text-sm">Año</button>
+                            <button class="btn-filter text-sm">Más populares</button>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+        
+            </div>
+        
+        
+            <!-- SUBHEADER LISTADO -->
+            <div class="w-full flex flex-col items-start gap-2">
+        
+                <p class="label-section">
+                    Listado de artistas
+                </p>
+        
+                <h3 class="text-navy text-2xl font-bold font-sans">
+                    Seleccioná un artista para ver sus obras y estilo
+                </h3>
+        
+            </div>
+        
+        
+            <!-- GRID ARTISTAS -->
+            <div class="w-full grid grid-cols-4 gap-8">
+        
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+        
+                    <img src="img/Home/warhol.jpg" class="w-full h-80 object-cover" />
+        
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Andy Warhol</p>
+                        <p class="text-gray-500">Estados Unidos · 1928–1987</p>
+                    </div>
+        
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+        
+                </div>
+        
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+        
+                    <img src="img/Home/lichtenstein.jpg" class="w-full h-80 object-cover" />
+        
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Roy Lichtenstein</p>
+                        <p class="text-gray-500">Estados Unidos · 1923–1997</p>
+                    </div>
+        
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+        
+                </div>
+        
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+        
+                    <img src="img/Home/hamilton.jpg" class="w-full h-80 object-cover" />
+        
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Richard Hamilton</p>
+                        <p class="text-gray-500">Reino Unido · 1922–2011</p>
+                    </div>
+        
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+        
+                </div>
+        
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+        
+                    <img src="img/Home/oldenburg.jpg" class="w-full h-80 object-cover" />
+        
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Claes Oldenburg</p>
+                        <p class="text-gray-500">Estados Unidos · 1929–2022</p>
+                    </div>
+        
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+        
+                </div>
+
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+                
+                    <img src="img/Home/oldenburg.jpg" class="w-full h-80 object-cover" />
+                
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Claes Oldenburg</p>
+                        <p class="text-gray-500">Estados Unidos · 1929–2022</p>
+                    </div>
+                
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+                
+                </div>
+
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+                
+                    <img src="img/Home/oldenburg.jpg" class="w-full h-80 object-cover" />
+                
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Claes Oldenburg</p>
+                        <p class="text-gray-500">Estados Unidos · 1929–2022</p>
+                    </div>
+                
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+                
+                </div>
+
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+                
+                    <img src="img/Home/oldenburg.jpg" class="w-full h-80 object-cover" />
+                
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Claes Oldenburg</p>
+                        <p class="text-gray-500">Estados Unidos · 1929–2022</p>
+                    </div>
+                
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+                
+                </div>
+
+                <!-- CARD -->
+                <div class="flex flex-col items-center gap-4">
+                
+                    <img src="img/Home/oldenburg.jpg" class="w-full h-80 object-cover" />
+                
+                    <div class="text-center">
+                        <p class="text-lg text-navy">Claes Oldenburg</p>
+                        <p class="text-gray-500">Estados Unidos · 1929–2022</p>
+                    </div>
+                
+                    <a href="#" class="btn-secondary btn-sm">
+                        Conocé más
+                    </a>
+                
+                </div>
+        
+            </div>
+        
+        
+            <!-- PAGINACIÓN -->
+            <div class="flex items-center gap-3 mt-6">
+            
+                <button class="btn-secondary-ghost">←</button>
+            
+                <button class="pagination-item active">1</button>
+                <button class="pagination-item">2</button>
+                <button class="pagination-item">3</button>
+            
+                <button class="btn-secondary-ghost">→</button>
+            
+            </div>
+        
+        </section>
+
+
+        <!-- CTA FINAL -->
+        <section class="section-dark flex items-center justify-between gap-12">
+        
+            <!-- Texto -->
+            <div class="flex-1 flex flex-col gap-5">
+                <p class="label-section text-pop-celeste">Edición mensual</p>
+        
+                <h2 class="title-section-light">
+                    Pop Art Magazine
+                </h2>
+        
+                <p class="body-text text-brand-white max-w-3xl">
+                    Una selección curada de artistas, obras y contextos del Pop Art.
+                    Recibí contenido exclusivo, análisis visual y recorridos temáticos en cada edición.
+                </p>
+            </div>
+        
+            <!-- Botón -->
+            <a href="contacto.php" class="btn-primary-light">
+                ¡Quiero suscribirme!
+            </a>
+        
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>
