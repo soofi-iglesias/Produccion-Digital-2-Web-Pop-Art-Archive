@@ -788,16 +788,6 @@ html {
   line-height: 1.25rem;
 }
 
-.btn-md {
-  /* MEDIUM → default */
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .btn-filter {
   display: inline-flex;
   align-items: center;
@@ -967,6 +957,10 @@ html {
   z-index: 50;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -977,14 +971,6 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .inline-block {
@@ -1027,12 +1013,12 @@ html {
   height: 700px;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-\[800px\] {
   height: 800px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-24 {
@@ -1201,14 +1187,14 @@ html {
   border-color: rgb(0 52 79 / var(--tw-border-opacity, 1));
 }
 
-.border-pop-pink {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 79 216 / var(--tw-border-opacity, 1));
-}
-
 .border-pop-green {
   --tw-border-opacity: 1;
   border-color: rgb(0 230 118 / var(--tw-border-opacity, 1));
+}
+
+.border-pop-pink {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 79 216 / var(--tw-border-opacity, 1));
 }
 
 .bg-almost-black {
@@ -1231,19 +1217,24 @@ html {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-pop-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 79 216 / var(--tw-bg-opacity, 1));
-}
-
 .bg-pop-green {
   --tw-bg-opacity: 1;
   background-color: rgb(0 230 118 / var(--tw-bg-opacity, 1));
 }
 
+.bg-pop-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 79 216 / var(--tw-bg-opacity, 1));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .px-20 {
@@ -1276,9 +1267,9 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pb-12 {
@@ -1297,16 +1288,24 @@ html {
   padding-top: 1rem;
 }
 
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
 .pl-20 {
   padding-left: 5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
