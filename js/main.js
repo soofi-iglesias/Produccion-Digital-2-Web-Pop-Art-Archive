@@ -1,38 +1,25 @@
 console.log("JS cargado");
 
-const slider = document.getElementById('gallery-scroll');
+/* CARRUSEL — Obras icónicas */
 
-let isDown = false;
-let startX;
-let scrollLeft;
+const track = document.getElementById('carousel-track');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
+if (track && prevBtn && nextBtn) {
+    const visibles = 2;
+    const total = track.children.length;
+    let current = 0;
 
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-});
+    function mover(direccion) {
+        current += direccion;
+        if (current < 0) current = 0;
+        if (current > total - visibles) current = total - visibles;
 
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-});
+        const ancho = track.children[0].offsetWidth + 16;
+        track.style.transform = `translateX(-${current * ancho}px)`;
+    }
 
-slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1.5; // velocidad
-  slider.scrollLeft = scrollLeft - walk;
-});
-
-slider.addEventListener('mousedown', () => {
-  slider.classList.add('cursor-grabbing');
-});
-
-slider.addEventListener('mouseup', () => {
-  slider.classList.remove('cursor-grabbing');
-});
+    prevBtn.addEventListener('click', () => mover(-1));
+    nextBtn.addEventListener('click', () => mover(1));
+}

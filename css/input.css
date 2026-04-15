@@ -127,7 +127,7 @@
     }
     
     .nav-link-active {
-        @apply px-2 py-3 text-navy text-base font-bold font-display leading-4;
+        @apply px-2 py-3 text-navy font-bold font-sans underline underline-offset-4 decoration-2 decoration-navy;
     }
 
     /* CARDS */

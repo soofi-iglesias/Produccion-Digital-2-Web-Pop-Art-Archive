@@ -1,7 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <!-- 
+    Proyecto Integrador - Produccion Digital 2 - Pop Art Archive
+    Desarrollado por Sofía Iglesias
+    Universidad de Palermo - 1er Cuatrimestre 2026
+-->
 
-<head>
+  <!-- 
+    Escribir en Terminal siempre antes de arrancar:
+        npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
+-->
+
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Pop Art Archive</title>
@@ -13,356 +23,478 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-cream pt-24">
-
+  <body class="bg-cream pt-24">
     <!-- NAVBAR -->
-    <header class="fixed top-0 left-0 w-full h-20 bg-brand-white border-b-2 border-navy
-                   shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]
-                   flex items-center justify-between px-20 z-50">
-    
-        <!-- Logo -->
-        <a href="index.html"
-            class="text-navy text-2xl font-bold font-display leading-7 hover:opacity-80 transition-opacity">
-                <img src="img/Logo PAA.svg" alt="Pop Art Archive" class="h-26 w-auto" />
+    <header
+      class="fixed top-0 left-0 w-full h-20 bg-brand-white border-b-2 border-navy shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-between px-20 z-50"
+    >
+      <!-- Logo -->
+      <a
+        href="index.html"
+        class="text-navy text-2xl font-bold font-display leading-7 hover:opacity-80 transition-opacity"
+      >
+        <img src="img/Logo PAA.svg" alt="Pop Art Archive" class="h-26 w-auto" />
+      </a>
 
-        </a>
-    
-        <!-- Links -->
-        <nav class="flex items-center gap-4">
-            <a href="index.html" class="nav-link-active">Home</a>
-            <a href="explorar.html" class="nav-link">Explorar</a>
-            <a href="movimiento.html" class="nav-link">Movimiento</a>
-            <a href="artistas.html" class="nav-link">Artistas</a>
-            <a href="obras.html" class="nav-link">Obras</a>
-            <a href="timeline.html" class="nav-link">Línea de tiempo</a>
-            <a href="contacto.php" class="nav-link">Contacto</a>
-        </nav>
-    
+      <!-- Links -->
+      <nav class="flex items-center gap-4">
+        <a href="index.html" class="nav-link-active">Home</a>
+        <a href="explorar.html" class="nav-link">Explorar</a>
+        <a href="movimiento.html" class="nav-link">Movimiento</a>
+        <a href="artistas.html" class="nav-link">Artistas</a>
+        <a href="obras.html" class="nav-link">Obras</a>
+        <a href="timeline.html" class="nav-link">Línea de tiempo</a>
+        <a href="contacto.php" class="nav-link">¡Suscribite!</a>
+      </nav>
     </header>
-    
+
     <!-- MAIN -->
     <main>
-    
-        <!-- HERO -->
-        <section class="w-full px-20 pt-12 pb-12 bg-cream flex flex-col items-center gap-14 mt-20">
-    
-            <div class="w-full flex justify-start items-center gap-20">
-    
-                <!-- Texto -->
-                <div class="flex-1 flex flex-col items-center">
-                    <h1 class="title-hero text-center">Pop Art<br />Archive</h1>
-                    <p class="body-text text-center mt-2">
-                        Una galería interactiva para explorar el arte de<br />la cultura popular
-                    </p>
-                </div>
-    
-                <!-- Hero Image -->
-                <img src="img/Home/Hero Image.jpg" alt="Hero Image Pop Art Archive"
-                    class="w-full max-w-[660px] h-auto object-cover shrink-0" />
-    
-            </div>
-    
-            <!-- Flecha p/scroll -->
-            <a href="#que-es-el-pop-art" class="flex justify-center pt-4">
-                <svg class="w-8 h-8 text-almost-black animate-bounce" fill="none" stroke="currentColor" stroke-width="2"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-            </a>
-    
-        </section>
-    
-        <!-- ¿QUÉ ES EL POP ART? -->
-        <section id="que-es-el-pop-art" class="section-white flex flex-col items-center gap-20">
-        
-            <!-- Titulos -->
-            <div class="w-full flex flex-col items-center gap-3">
-                <p class="text-pop-celeste text-xl font-bold font-sans uppercase leading-5 tracking-wide text-center">
-                    ¿Qué es el Pop Art?
-                </p>
-                <h2 class="text-navy text-5xl font-bold font-sans text-center">
-                    Un movimiento artístico que transforma la cultura de masas,
-                    la publicidad y los objetos cotidianos en imágenes icónicas
-                </h2>
-            </div>
-        
-            <!-- Cards Row 1 -->
-            <div class="w-full flex items-start gap-16">
-        
-                <div class="card-pop outline-pop-red flex-1">
-                    <img src="img/Home/Icon Marilyn.png" alt="Cultura popular" class="w-24 h-24" />
-                    <h3 class="title-card text-center">Cultura popular</h3>
-                    <p class="body-text text-center">El Pop Art toma elementos de la vida cotidiana como productos, marcas y
-                        celebridades para transformarlos en imágenes artísticas.</p>
-                </div>
-        
-                <div class="card-pop outline-pop-yellow flex-1">
-                    <img src="img/Home/Icon Bubble Gum.png" alt="Publicidad y medios" class="w-auto h-24" />
-                    <h3 class="title-card text-center">Publicidad y medios</h3>
-                    <p class="body-text text-center">El movimiento se inspira en la estética publicitaria, incorporando
-                        tipografías llamativas, slogans y composiciones gráficas directas.</p>
-                </div>
-        
-            </div>
-        
-            <!-- Cards Row 2 -->
-            <div class="w-full flex items-start gap-16">
-        
-                <div class="card-pop outline-pop-green flex-1">
-                    <img src="img/Home/Icon Intergallactic.png" alt="Estética del cómic" class="w-24 h-24" />
-                    <h3 class="title-card text-center">Estética del cómic</h3>
-                    <p class="body-text text-center">El uso de contornos marcados, tramas de puntos y colores planos proviene
-                        del lenguaje visual del cómic y la ilustración.</p>
-                </div>
-        
-                <div class="card-pop outline-pop-pink flex-1">
-                    <img src="img/Home/Icon Coca Cola.png" alt="Color y repetición" class="w-24 h-24" />
-                    <h3 class="title-card text-center">Color y repetición</h3>
-                    <p class="body-text text-center">El Pop Art utiliza colores vibrantes y repite imágenes para generar impacto
-                        visual y reforzar el carácter masivo del movimiento.</p>
-                </div>
-        
-            </div>
-        
-            <!-- BOTON -->
-            <a href="movimiento.html" class="btn-primary">
-                Conocé más sobre el movimiento
-            </a>
-        </section>
-
-        <!-- EXPLORAR LA COLECCION -->
-        <section class="section-dark flex flex-col items-center gap-12">
-        
-            <!-- Header -->
-            <div class="w-full flex flex-col items-center gap-2">
-                <p class="label-section text-center">Explorar la colección</p>
-                <h2 class="title-section-light text-center">Elegí como querés recorrer el movimiento</h2>
-            </div>
-        
-            <!-- Cards -->
-            <div class="w-full flex items-start gap-8">
-        
-                <div class="flex-1 flex flex-col items-start gap-5">
-                    <img src="img/Obras/Andy Warhol/Andy Warhol - Diptico Marilyn.png" alt="Obras" class="w-full h-80 object-cover" />
-                    <div class="flex flex-col items-start gap-2">
-                        <h3 class="title-card-light">Obras</h3>
-                        <p class="body-text text-brand-white">Explorá piezas icónicas del Pop Art</p>
-                    </div>
-                    <a href="obras.html" class="btn-primary-light">Recorrer</a>
-                </div>
-        
-                <div class="flex-1 flex flex-col items-start gap-5">
-                    <img src="img/Contexto/James Rosenquist - Through the Eye of the Needle to the Anvil.png" alt="Artistas" class="w-full h-80 object-cover" />
-                    <div class="flex flex-col items-start gap-2">
-                        <h3 class="title-card-light">Artistas</h3>
-                        <p class="body-text text-brand-white">Conocé a los referentes del movimiento</p>
-                    </div>
-                    <a href="artistas.html" class="btn-primary-light">Recorrer</a>
-                </div>
-        
-                <div class="flex-1 flex flex-col items-start gap-5">
-                    <img src="img/Obras/Richard Hamilton/Richard Hamilton - Interior II.png" alt="Línea de tiempo" class="w-full h-80 object-cover" />
-                    <div class="flex flex-col items-start gap-2">
-                        <h3 class="title-card-light">Línea de tiempo</h3>
-                        <p class="body-text text-brand-white">Recorré la evolución del Pop Art</p>
-                    </div>
-                    <a href="timeline.html" class="btn-primary-light">Recorrer</a>
-                </div>
-        
-            </div>
-        
-        </section>
-
-        <!-- ARTISTAS DESTACADOS -->
-        <section class="section-white flex flex-col items-center gap-16">
-        
-            <!-- Header -->
-            <div class="w-full flex flex-col items-center gap-2">
-                <p class="label-section text-center">Artistas del Pop Art</p>
-                <h2 class="title-section text-center">
-                    Referentes que definieron el lenguaje visual del movimiento
-                </h2>
-            </div>
-        
-            <!-- Grid artistas -->
-            <div class="w-full flex items-start gap-4">
-        
-                <!-- CARD -->
-                <div class="flex-1 flex flex-col items-center gap-8">
-                    <img src="img/Referentes/Andy Warhol.png" alt="Andy Warhol"
-                        class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <div class="flex flex-col items-center gap-5 text-center">
-                        <div class="flex flex-col gap-2">
-                            <h3 class="title-card text-navy">Andy Warhol</h3>
-                            <p class="artist-meta">Estados Unidos · 1928–1987</p>
-                        </div>
-        
-                        <p class="body-xs">
-                            Figura central del Pop Art. Transformó productos comerciales y celebridades en imágenes icónicas
-                            mediante repetición y colores vibrantes.
-                        </p>
-                    </div>
-                </div>
-        
-                <!-- CARD -->
-                <div class="flex-1 flex flex-col items-center gap-8">
-                    <img src="img/Referentes/Roy Lichtenstein.png" alt="Roy Lichtenstein"
-                        class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <div class="flex flex-col items-center gap-5 text-center">
-                        <div class="flex flex-col gap-2">
-                            <h3 class="title-card text-navy">Roy Lichtenstein</h3>
-                            <p class="artist-meta">Estados Unidos · 1923–1997</p>
-                        </div>
-        
-                        <p class="body-xs">
-                            Inspirado en el cómic y la cultura impresa, utilizó tramas de puntos, contornos marcados y escenas
-                            narrativas de alto impacto visual.
-                        </p>
-                    </div>
-                </div>
-        
-                <!-- CARD -->
-                <div class="flex-1 flex flex-col items-center gap-8">
-                    <img src="img/Referentes/Richard Hamilton.png" alt="Richard Hamilton"
-                        class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <div class="flex flex-col items-center gap-5 text-center">
-                        <div class="flex flex-col gap-2">
-                            <h3 class="title-card text-navy">Richard Hamilton</h3>
-                            <p class="artist-meta">Reino Unido · 1922–2011</p>
-                        </div>
-        
-                        <p class="body-xs">
-                            Considerado uno de los pioneros del Pop Art. Incorporó publicidad, consumo y cultura popular en
-                            composiciones gráficas y collages.
-                        </p>
-                    </div>
-                </div>
-        
-                <!-- CARD -->
-                <div class="flex-1 flex flex-col items-center gap-8">
-                    <img src="img/Referentes/Claes Oldenburg.png" alt="Claes Oldenburg"
-                        class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <div class="flex flex-col items-center gap-5 text-center">
-                        <div class="flex flex-col gap-2">
-                            <h3 class="title-card text-navy">Claes Oldenburg</h3>
-                            <p class="artist-meta">Estados Unidos · 1929–2022</p>
-                        </div>
-        
-                        <p class="body-xs">
-                            Reconocido por sus esculturas de objetos cotidianos a gran escala, transformó elementos comunes en
-                            piezas monumentales del Pop Art.
-                        </p>
-                    </div>
-                </div>
-        
-            </div>
-        
-            <!-- CTA -->
-            <a href="artistas.html" class="btn-secondary">
-                Conocer a los artistas
-            </a>
-        
-        </section>
-
-        <!-- OBRAS DESTACADAS -->
-        <section class="section-light flex flex-col items-center gap-16">
-        
-            <!-- Header -->
-            <div class="w-full flex flex-col items-center gap-2">
-                <p class="label-section text-center">Obras icónicas</p>
-                <h2 class="title-section text-center">
-                    Piezas que marcaron la estética del Pop Art
-                </h2>
-            </div>
-        
-            <!-- SCROLL GALERÍA -->
-            <div class="w-full overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing">
-        
-                <div class="flex gap-6">
-        
-                    <!-- OBRA -->
-                    <img src="img/Home/obra1.jpg"
-                        class="h-80 min-w-[400px] object-cover shrink-0 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <!-- OBRA -->
-                    <img src="img/Home/obra2.jpg"
-                        class="h-80 min-w-[400px] object-cover shrink-0 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <!-- OBRA -->
-                    <img src="img/Home/obra3.jpg"
-                        class="h-80 min-w-[400px] object-cover shrink-0 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <!-- OBRA -->
-                    <img src="img/Home/obra4.jpg"
-                        class="h-80 min-w-[400px] object-cover shrink-0 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                    <!-- OBRA -->
-                    <img src="img/Home/obra5.jpg"
-                        class="h-80 min-w-[400px] object-cover shrink-0 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]" />
-        
-                </div>
-        
-            </div>
-        
-        </section>
-
-        <!-- CTA FINAL -->
-        <section class="section-dark flex items-center justify-between gap-12">
-        
-            <!-- Texto -->
-            <div class="flex-1 flex flex-col gap-5">
-                <p class="label-section text-pop-celeste">Edición mensual</p>
-        
-                <h2 class="title-section-light">
-                    Pop Art Magazine
-                </h2>
-        
-                <p class="body-text text-brand-white max-w-3xl">
-                    Una selección curada de artistas, obras y contextos del Pop Art.
-                    Recibí contenido exclusivo, análisis visual y recorridos temáticos en cada edición.
-                </p>
-            </div>
-        
-            <!-- Botón -->
-            <a href="contacto.php" class="btn-primary-light">
-                ¡Quiero suscribirme!
-            </a>
-        
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="w-full px-20 py-6 bg-almost-black flex items-center justify-between">
-        
-            <!-- Texto -->
-            <p class="text-brand-white text-sm font-display">
-                Copyright © 2026 Iglesias Agency | Todos los derechos reservados
+      <!-- HERO -->
+      <section
+        class="w-full px-20 pt-12 pb-12 bg-cream flex flex-col items-center gap-14 mt-20"
+      >
+        <div class="w-full flex justify-start items-center gap-20">
+          <!-- Texto -->
+          <div class="flex-1 flex flex-col items-center">
+            <h1 class="title-hero text-center">Pop Art<br />Archive</h1>
+            <p class="body-text text-center mt-2">
+              Una galería interactiva para explorar el arte de<br />la cultura
+              popular
             </p>
-        
-            <!-- Iconos -->
-            <div class="flex items-center gap-4">
-                <a href="https://www.instagram.com/siglesias.portfolio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-brand-white hover:text-pop-pink transition-colors">
-                    <img src="img/Redes Sociales/instagram.svg" alt="Instagram" class="w-6 h-6" />
-                </a>
-                <a href="#" class="text-brand-white hover:text-pop-blue transition-colors">
-                    <img src="img/Redes Sociales/twitter.svg" alt="Twitter" class="w-6 h-6" />
-                </a>
-                <a href="https://www.youtube.com/@sofiiglesiasph" class="text-brand-white hover:text-pop-yellow transition-colors">
-                    <img src="img/Redes Sociales/youtube.svg" alt="Youtube" class="w-6 h-6" />
-                </a>
+          </div>
+
+          <!-- Hero Image -->
+          <img
+            src="img/Home/Hero Image.jpg"
+            alt="Hero Image Pop Art Archive"
+            class="w-full max-w-[660px] h-auto object-cover shrink-0"
+          />
+        </div>
+
+        <!-- Flecha p/scroll -->
+        <a href="#que-es-el-pop-art" class="flex justify-center pt-4">
+          <svg
+            class="w-8 h-8 text-almost-black animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ¿QUÉ ES EL POP ART? -->
+      <section
+        id="que-es-el-pop-art"
+        class="section-white flex flex-col items-center gap-20"
+      >
+        <!-- Titulos -->
+        <div class="w-full flex flex-col items-center gap-3">
+          <p
+            class="text-pop-celeste text-xl font-bold font-sans uppercase leading-5 tracking-wide text-center"
+          >
+            ¿Qué es el Pop Art?
+          </p>
+          <h2
+            class="text-almost-black text-5xl font-bold font-sans text-center"
+          >
+            Un movimiento artístico que transforma la cultura de masas, la
+            publicidad y los objetos cotidianos en imágenes icónicas
+          </h2>
+        </div>
+
+        <!-- Cards Row 1 -->
+        <div class="w-full flex items-start gap-16">
+          <div class="card-pop outline-pop-red flex-1">
+            <img
+              src="img/Home/Icon Marilyn.png"
+              alt="Cultura popular"
+              class="w-24 h-24"
+            />
+            <h3 class="title-card text-center">Cultura popular</h3>
+            <p class="body-text text-center">
+              El Pop Art toma elementos de la vida cotidiana como productos,
+              marcas y celebridades para transformarlos en imágenes artísticas.
+            </p>
+          </div>
+
+          <div class="card-pop outline-pop-yellow flex-1">
+            <img
+              src="img/Home/Icon Bubble Gum.png"
+              alt="Publicidad y medios"
+              class="w-auto h-24"
+            />
+            <h3 class="title-card text-center">Publicidad y medios</h3>
+            <p class="body-text text-center">
+              El movimiento se inspira en la estética publicitaria, incorporando
+              tipografías llamativas, slogans y composiciones gráficas directas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards Row 2 -->
+        <div class="w-full flex items-start gap-16">
+          <div class="card-pop outline-pop-green flex-1">
+            <img
+              src="img/Home/Icon Intergallactic.png"
+              alt="Estética del cómic"
+              class="w-24 h-24"
+            />
+            <h3 class="title-card text-center">Estética del cómic</h3>
+            <p class="body-text text-center">
+              El uso de contornos marcados, tramas de puntos y colores planos
+              proviene del lenguaje visual del cómic y la ilustración.
+            </p>
+          </div>
+
+          <div class="card-pop outline-pop-pink flex-1">
+            <img
+              src="img/Home/Icon Coca Cola.png"
+              alt="Color y repetición"
+              class="w-24 h-24"
+            />
+            <h3 class="title-card text-center">Color y repetición</h3>
+            <p class="body-text text-center">
+              El Pop Art utiliza colores vibrantes y repite imágenes para
+              generar impacto visual y reforzar el carácter masivo del
+              movimiento.
+            </p>
+          </div>
+        </div>
+
+        <!-- BOTON -->
+        <a href="movimiento.html" class="btn-primary">
+          Conocé más sobre el movimiento
+        </a>
+      </section>
+
+      <!-- EXPLORAR LA COLECCION -->
+      <section class="section-dark flex flex-col items-center gap-12">
+        <!-- Header -->
+        <div class="w-full flex flex-col items-center gap-2">
+          <p class="label-section text-center">Explorar la colección</p>
+          <h2 class="title-section-light text-center">
+            Elegí como querés recorrer el movimiento
+          </h2>
+        </div>
+
+        <!-- Cards -->
+        <div class="w-full flex items-start gap-8">
+          <div class="flex-1 flex flex-col items-start gap-5">
+            <img
+              src="img/Obras/Andy Warhol/Andy Warhol - Diptico Marilyn.png"
+              alt="Obras"
+              class="w-full h-80 object-cover"
+            />
+            <div class="flex flex-col items-start gap-2">
+              <h3 class="title-card-light">Obras</h3>
+              <p class="body-text text-brand-white">
+                Explorá piezas icónicas del Pop Art
+              </p>
             </div>
-        </footer>
-    
+            <a href="obras.html" class="btn-primary-light">Recorrer</a>
+          </div>
+
+          <div class="flex-1 flex flex-col items-start gap-5">
+            <img
+              src="img/Contexto/James Rosenquist - Through the Eye of the Needle to the Anvil.png"
+              alt="Artistas"
+              class="w-full h-80 object-cover"
+            />
+            <div class="flex flex-col items-start gap-2">
+              <h3 class="title-card-light">Artistas</h3>
+              <p class="body-text text-brand-white">
+                Conocé a los referentes del movimiento
+              </p>
+            </div>
+            <a href="artistas.html" class="btn-primary-light">Recorrer</a>
+          </div>
+
+          <div class="flex-1 flex flex-col items-start gap-5">
+            <img
+              src="img/Obras/Richard Hamilton/Richard Hamilton - Interior II.png"
+              alt="Línea de tiempo"
+              class="w-full h-80 object-cover"
+            />
+            <div class="flex flex-col items-start gap-2">
+              <h3 class="title-card-light">Línea de tiempo</h3>
+              <p class="body-text text-brand-white">
+                Recorré la evolución del Pop Art
+              </p>
+            </div>
+            <a href="timeline.html" class="btn-primary-light">Recorrer</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTISTAS DESTACADOS -->
+      <section class="section-white flex flex-col items-center gap-16">
+        <!-- Header -->
+        <div class="w-full flex flex-col items-center gap-2">
+          <p class="label-section text-center">Artistas del Pop Art</p>
+          <h2 class="title-section text-center">
+            Referentes que definieron el lenguaje visual del movimiento
+          </h2>
+        </div>
+
+        <!-- Grid artistas -->
+        <div class="w-full flex items-start gap-4">
+          <!-- CARD -->
+          <div class="flex-1 flex flex-col items-center gap-8">
+            <img
+              src="img/Referentes/Andy Warhol.png"
+              alt="Andy Warhol"
+              class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+            />
+
+            <div class="flex flex-col items-center gap-5 text-center">
+              <div class="flex flex-col gap-2">
+                <h3 class="title-card text-navy">Andy Warhol</h3>
+                <p class="artist-meta">Estados Unidos · 1928–1987</p>
+              </div>
+
+              <p class="body-xs">
+                Figura central del Pop Art. Transformó productos comerciales y
+                celebridades en imágenes icónicas mediante repetición y colores
+                vibrantes.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="flex-1 flex flex-col items-center gap-8">
+            <img
+              src="img/Referentes/Roy Lichtenstein.png"
+              alt="Roy Lichtenstein"
+              class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+            />
+
+            <div class="flex flex-col items-center gap-5 text-center">
+              <div class="flex flex-col gap-2">
+                <h3 class="title-card text-navy">Roy Lichtenstein</h3>
+                <p class="artist-meta">Estados Unidos · 1923–1997</p>
+              </div>
+
+              <p class="body-xs">
+                Inspirado en el cómic y la cultura impresa, utilizó tramas de
+                puntos, contornos marcados y escenas narrativas de alto impacto
+                visual.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="flex-1 flex flex-col items-center gap-8">
+            <img
+              src="img/Referentes/Richard Hamilton.png"
+              alt="Richard Hamilton"
+              class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+            />
+
+            <div class="flex flex-col items-center gap-5 text-center">
+              <div class="flex flex-col gap-2">
+                <h3 class="title-card text-navy">Richard Hamilton</h3>
+                <p class="artist-meta">Reino Unido · 1922–2011</p>
+              </div>
+
+              <p class="body-xs">
+                Considerado uno de los pioneros del Pop Art. Incorporó
+                publicidad, consumo y cultura popular en composiciones gráficas
+                y collages.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="flex-1 flex flex-col items-center gap-8">
+            <img
+              src="img/Referentes/Claes Oldenburg.png"
+              alt="Claes Oldenburg"
+              class="w-full h-96 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+            />
+
+            <div class="flex flex-col items-center gap-5 text-center">
+              <div class="flex flex-col gap-2">
+                <h3 class="title-card text-navy">Claes Oldenburg</h3>
+                <p class="artist-meta">Estados Unidos · 1929–2022</p>
+              </div>
+
+              <p class="body-xs">
+                Reconocido por sus esculturas de objetos cotidianos a gran
+                escala, transformó elementos comunes en piezas monumentales del
+                Pop Art.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <a href="artistas.html" class="btn-secondary">
+          Conocer a los artistas
+        </a>
+      </section>
+
+      <!-- OBRAS DESTACADAS -->
+      <section class="section-light flex flex-col items-center gap-16">
+        <!-- Header -->
+        <div class="w-full flex flex-col items-center gap-2">
+          <p class="label-section text-center">Obras icónicas</p>
+          <h2 class="title-section text-center">
+            Piezas que marcaron la estética del Pop Art
+          </h2>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="w-full flex items-center gap-4">
+          <!-- Botón anterior -->
+          <button
+            id="prev"
+            class="shrink-0 w-10 h-10 flex items-center justify-center border-2 border-almost-black hover:bg-almost-black hover:text-brand-white transition-all"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <!-- Track de imágenes -->
+          <div class="overflow-hidden flex-1 pb-3">
+            <div
+              id="carousel-track"
+              class="flex gap-4 transition-transform duration-500 ease-in-out"
+            >
+              <img
+                src="https://placehold.co/592x350"
+                alt="Obra 1"
+                class="w-[calc(50%-8px)] shrink-0 h-80 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+              />
+              <img
+                src="https://placehold.co/592x350"
+                alt="Obra 2"
+                class="w-[calc(50%-8px)] shrink-0 h-80 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+              />
+              <img
+                src="https://placehold.co/592x350"
+                alt="Obra 3"
+                class="w-[calc(50%-8px)] shrink-0 h-80 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+              />
+              <img
+                src="https://placehold.co/592x350"
+                alt="Obra 4"
+                class="w-[calc(50%-8px)] shrink-0 h-80 object-cover shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)]"
+              />
+            </div>
+          </div>
+
+          <!-- Botón siguiente -->
+          <button
+            id="next"
+            class="shrink-0 w-10 h-10 flex items-center justify-center border-2 border-almost-black hover:bg-almost-black hover:text-brand-white transition-all"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="section-dark flex items-center justify-between gap-12">
+        <!-- Texto -->
+        <div class="flex-1 flex flex-col gap-5">
+          <p class="label-section text-pop-celeste">Edición mensual</p>
+
+          <h2 class="title-section-light">Pop Art Magazine</h2>
+
+          <p class="body-text text-brand-white max-w-3xl">
+            Una selección curada de artistas, obras y contextos del Pop Art.
+            Recibí contenido exclusivo, análisis visual y recorridos temáticos
+            en cada edición.
+          </p>
+        </div>
+
+        <!-- Botón -->
+        <a href="contacto.php" class="btn-primary-light">
+          ¡Quiero suscribirme!
+        </a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="w-full px-20 py-6 bg-almost-black flex items-center justify-between"
+      >
+        <!-- Texto -->
+        <p class="text-brand-white text-sm font-display">
+          Copyright © 2026 Iglesias Agency | Todos los derechos reservados
+        </p>
+
+        <!-- Iconos -->
+        <div class="flex items-center gap-4">
+          <a
+            href="https://www.instagram.com/siglesias.portfolio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="text-brand-white hover:text-pop-pink transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/instagram.svg"
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="#"
+            class="text-brand-white hover:text-pop-blue transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/twitter.svg"
+              alt="Twitter"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@sofiiglesiasph"
+            class="text-brand-white hover:text-pop-yellow transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/youtube.svg"
+              alt="Youtube"
+              class="w-6 h-6"
+            />
+          </a>
+        </div>
+      </footer>
     </main>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
