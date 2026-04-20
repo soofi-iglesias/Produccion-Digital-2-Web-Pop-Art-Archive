@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obras - Pop Art Archive</title>
+    <title>Explorar - Pop Art Archive</title>
 
     <link rel="stylesheet" href="css/output.css" />
 
@@ -15,7 +15,7 @@
     />
   </head>
 
-  <body class="bg-brand-white text-navy font-body">
+  <body class="bg-brand-white text-navy font-body flex flex-col min-h-screen">
     <header
       class="fixed top-0 left-0 w-full h-20 bg-brand-white border-b-2 border-navy shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-between px-20 z-50"
     >
@@ -28,87 +28,124 @@
 
       <nav class="flex items-center gap-4">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="explorar.html" class="nav-link">Explorar</a>
+        <a href="explorar.html" class="nav-link-active">Explorar</a>
         <a href="movimiento.html" class="nav-link">Movimiento</a>
         <a href="artistas.html" class="nav-link">Artistas</a>
-        <a href="obras.html" class="nav-link-active">Obras</a>
+        <a href="obras.html" class="nav-link">Obras</a>
         <a href="timeline.html" class="nav-link">Línea de tiempo</a>
         <a href="contacto.html" class="nav-link">¡Suscribite!</a>
       </nav>
     </header>
 
-    <main>
+    <main class="flex-1 flex flex-col pt-20">
       <section
-        class="section-white h-screen py-0 pr-0 pl-20 border-b-8 border-pop-green flex items-center gap-20 lg:gap-40"
+        class="section-white h-[calc(100vh-80px)] py-0 pr-0 pl-20 border-b-8 border-pop-orange flex items-center"
       >
         <div class="flex-1 flex flex-col gap-20 lg:gap-40 py-20">
           <div class="flex-1 flex flex-col gap-12">
             <div class="flex flex-col gap-4">
               <span
-                class="w-fit bg-pop-green text-brand-white px-4 py-2 text-lg font-bold uppercase tracking-wide"
+                class="w-fit bg-pop-orange text-white px-4 py-2 text-lg font-bold uppercase tracking-wide"
               >
-                Obras del Pop Art
+                La Colección
               </span>
 
               <h1 class="title-section text-navy">
-                Piezas icónicas que definieron la estética del movimiento
+                Sumergite en el universo visual de la cultura pop
               </h1>
             </div>
 
-            <p class="body-text max-w-xl">
-              Desde las latas de sopa Campbell de Warhol hasta los cómics de
-              Lichtenstein, explorá las obras más emblemáticas del Pop Art, sus
-              contextos de creación y su impacto en la cultura visual
-              contemporánea.
+            <p class="body-text">
+              Navegá por nuestra galería interactiva. Encontrá piezas icónicas,
+              explorá las obras dentro de sus contextos de exhibición y filtrá
+              por los conceptos que definieron a toda una generación.
             </p>
           </div>
 
-          <a href="#listado-obras" class="w-fit btn-primary">
-            Conocer las obras
-          </a>
+          <a href="#galeria" class="w-fit btn-primary"> Empezar a explorar </a>
         </div>
 
         <img
-          src="img/Pagina Obras/Hero Image Obras.png"
+          src="img/Pagina Explorar/Hero Explorar.png"
           class="h-full w-auto object-cover flex-none"
-          alt="Hero Obras"
+          alt="Hero Explorar"
         />
       </section>
 
       <section
-        id="listado-obras"
+        id="galeria"
         class="section-white flex flex-col items-center gap-16"
       >
-        <div class="w-full flex flex-col items-start gap-6">
-          <div class="w-full flex flex-col items-start gap-4">
-            <span
-              class="bg-pop-green text-brand-white px-4 py-1 text-xl font-bold font-sans uppercase tracking-wide inline-block"
-            >
-              Explorar obras
-            </span>
+        <div class="w-full max-w-6xl flex flex-col gap-8">
+          <div class="flex flex-col gap-2">
+            <h2 class="title-h2-navy text-center">¿Qué estás buscando hoy?</h2>
+            <p class="body-text text-center max-w-2xl mx-auto">
+              Usá el buscador de texto o navegá a través de nuestros filtros
+              conceptuales para descubrir nuevas obras.
+            </p>
+          </div>
 
-            <div class="w-full flex items-center gap-6">
+          <div class="w-full flex justify-center">
+            <div
+              class="w-full max-w-2xl flex items-center bg-gray-100 border-2 border-navy px-4 py-3 gap-3"
+            >
+              <svg
+                class="w-6 h-6 text-navy shrink-0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
               <input
                 type="text"
-                placeholder="Buscar obra..."
-                class="flex-1 px-4 py-3 text-sm bg-gray-100 border-2 border-navy outline-none font-sans"
+                placeholder="Buscar por obra, artista o museo..."
+                class="flex-1 bg-transparent text-navy outline-none font-sans text-lg placeholder:text-gray-500"
               />
-
-              <div class="flex items-center gap-3">
-                <button class="btn-filter text-sm">A-Z</button>
-                <button class="btn-filter text-sm">Año</button>
-                <button class="btn-filter text-sm">Más populares</button>
-              </div>
             </div>
           </div>
-        </div>
+
+          <div class="w-full flex flex-wrap justify-center gap-4">
+                <button class="btn-category-active">
+                    Todos
+                </button>
+                
+                <button class="btn-category hover:bg-pop-red hover:border-pop-red hover:text-brand-white">
+                    Cultura popular
+                </button>
+                <button class="btn-category hover:bg-pop-yellow hover:border-pop-yellow hover:text-navy">
+                    Publicidad
+                </button>
+                <button class="btn-category hover:bg-pop-pink hover:border-pop-pink hover:text-brand-white">
+                    Celebridades
+                </button>
+                <button class="btn-category hover:bg-pop-green hover:border-pop-green hover:text-brand-white">
+                    Cómic
+                </button>
+                <button class="btn-category hover:bg-pop-blue hover:border-pop-blue hover:text-brand-white">
+                    Consumo masivo
+                </button>
+                <button class="btn-category hover:bg-pop-orange hover:border-pop-orange hover:text-brand-white">
+                    Objetos cotidianos
+                </button>
+                <button class="btn-category hover:bg-pop-purple hover:border-pop-purple hover:text-brand-white">
+                    Medios
+                </button>
+                <button class="btn-category hover:bg-pop-celeste hover:border-pop-celeste hover:text-navy">
+                    Íconos
+                </button>
+            </div>
+
+        <hr class="w-full border-t-2 border-gray-200" />
 
         <div class="w-full flex flex-col items-start gap-2">
-          <p class="label-section">Listado de obras</p>
-
-          <h3 class="title-h3-navy">
-            Seleccioná una obra para ver su información y contexto
-          </h3>
+          <p class="label-section">Galería de imágenes</p>
+          <h3 class="body-text">Mostrando 24 resultados</h3>
         </div>
 
         <div class="w-full grid grid-cols-4 gap-8">
@@ -291,7 +328,6 @@
           </div>
         </div>
 
-      
       </section>
 
       <!-- CTA FINAL -->

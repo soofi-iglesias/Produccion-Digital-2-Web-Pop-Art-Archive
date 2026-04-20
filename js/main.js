@@ -23,3 +23,31 @@ if (track && prevBtn && nextBtn) {
     prevBtn.addEventListener('click', () => mover(-1));
     nextBtn.addEventListener('click', () => mover(1));
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('subscribe-form');
+    const formState = document.getElementById('form-state');
+    const successState = document.getElementById('success-state');
+
+    if (form && formState && successState) {
+        form.addEventListener('submit', function(event) {
+            
+            event.preventDefault();
+
+            formState.classList.remove('opacity-100');
+            formState.classList.add('opacity-0');
+
+            setTimeout(() => {
+                
+                formState.classList.add('hidden');
+                successState.classList.remove('hidden');
+
+                setTimeout(() => {
+                    successState.classList.remove('opacity-0');
+                    successState.classList.add('opacity-100');
+                }, 50);
+
+            }, 500);
+        });
+    }
+});

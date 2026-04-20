@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Línea de tiempo - Pop Art Archive</title>
+
+    <link rel="stylesheet" href="css/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-brand-white text-navy font-body flex flex-col min-h-screen pt-20">
+    <header
+      class="fixed top-0 left-0 w-full h-20 bg-brand-white border-b-2 border-navy shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)] flex items-center justify-between px-20 z-50"
+    >
+      <a
+        href="index.html"
+        class="text-navy text-2xl font-bold font-display leading-7 hover:opacity-80 transition-opacity"
+      >
+        <img src="img/Logo PAA.svg" alt="Pop Art Archive" class="h-26 w-auto" />
+      </a>
+
+      <nav class="flex items-center gap-4">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explorar.html" class="nav-link">Explorar</a>
+        <a href="movimiento.html" class="nav-link">Movimiento</a>
+        <a href="artistas.html" class="nav-link">Artistas</a>
+        <a href="obras.html" class="nav-link">Obras</a>
+        <a href="timeline.html" class="nav-link-active">Línea de tiempo</a>
+        <a href="contacto.html" class="nav-link">¡Suscribite!</a>
+      </nav>
+    </header>
+
+    <main class="flex-1 flex flex-col">
+      <section
+        class="section-white h-[calc(100vh-80px)] py-0 border-b-8 border-pop-red flex items-center px-20 gap-20 lg:gap-40"
+      >
+        <img
+          src="img/Timeline/Hero Timeline.png"
+          class="h-full w-auto object-cover flex-none"
+          alt="Hero Timeline"
+        />
+
+        <div class="flex-1 flex flex-col gap-20 lg:gap-40 py-20">
+          <div class="flex-1 flex flex-col gap-12">
+            <div class="flex flex-col gap-4">
+              <span
+                class="w-fit bg-pop-red text-brand-white px-4 py-2 text-lg font-bold uppercase tracking-wide"
+              >
+                Evolución del Pop Art
+              </span>
+
+              <h1 class="title-section text-navy">
+                Momentos clave del movimiento a lo largo del tiempo
+              </h1>
+            </div>
+
+            <p class="body-text max-w-xl">
+              Un recorrido por el movimiento que transformó la cultura popular
+              en arte, desde sus orígenes en la década del 50 hasta su
+              influencia en la estética digital actual.
+            </p>
+          </div>
+
+          <a href="#linea-de-tiempo" class="w-fit btn-primary">
+            Conocer más
+          </a>
+        </div>
+      </section>
+
+      <section id="linea-de-tiempo" class="section-light flex flex-col items-center">
+        <div class="w-full max-w-5xl flex flex-col">
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-red"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-red text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1950 - 1955
+              </div>
+              <h2 class="title-h2-navy">
+                La cultura de masas entra en el arte
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  Después de la Segunda Guerra Mundial, el crecimiento económico
+                  impulsa el consumo, la publicidad y los medios masivos. En
+                  este contexto, artistas comienzan a cuestionar el arte
+                  tradicional (abstracto y elitista) y a mirar hacia la cultura
+                  popular como nueva fuente de inspiración. Revistas,
+                  electrodomésticos, cine y productos comerciales pasan a formar
+                  parte del imaginario visual.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>
+                    Se empieza a borrar el límite entre arte y vida cotidiana.
+                  </li>
+                  <li>
+                    Influencia del diseño gráfico, publicidad y medios impresos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-yellow"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-yellow text-navy text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1956
+              </div>
+              <h2 class="title-h2-navy">
+                El nacimiento oficial del movimiento
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El collage
+                  <em
+                    >Just what is it that makes today's homes so different, so
+                    appealing?</em
+                  >
+                  marca un antes y un después. Esta obra combina recortes de
+                  revistas con imágenes de consumo, cuerpos idealizados y
+                  tecnología doméstica, mostrando una sociedad obsesionada con
+                  el confort y la apariencia.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Figura clave: Richard Hamilton.</li>
+                  <li>
+                    Se consolida la idea de que el arte puede apropiarse de
+                    imágenes existentes.
+                  </li>
+                  <li>
+                    Aparece una mirada crítica (pero también irónica) sobre el
+                    consumismo.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-blue"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-blue text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1960 - 1962
+              </div>
+              <h2 class="title-h2-navy">El Pop Art cruza el Atlántico</h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El Pop Art llega a EE.UU., donde se vuelve más directo, visual
+                  e industrial. A diferencia del enfoque más teórico británico,
+                  los artistas estadounidenses adoptan una estética más ligada a
+                  la reproducción en masa y a la cultura mediática.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Artistas clave: Andy Warhol, Roy Lichtenstein.</li>
+                  <li>
+                    Se incorporan imágenes de cómics, supermercados y
+                    celebridades.
+                  </li>
+                  <li>
+                    Se empieza a trabajar con técnicas mecánicas (serigrafía,
+                    impresión).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-green"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-green text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1962
+              </div>
+              <h2 class="title-h2-navy">
+                Explota el Pop Art | El Pop Art entra en el circuito artístico
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  Las primeras exposiciones importantes legitiman el movimiento
+                  dentro del mundo del arte. El Pop Art deja de ser experimental
+                  y pasa a ser una tendencia dominante.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Exposición en la galería Sidney Janis (Nueva York)</li>
+                  <li>Andy Warhol presenta las latas de sopa Campbell</li>
+                  <li>Roy Lichtenstein expone obras inspiradas en cómics</li>
+                  <li>
+                    Se genera polémica: ¿esto es arte o solo reproducción?
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-pink"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-pink text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1963 - 1965
+              </div>
+              <h2 class="title-h2-navy">Fama, consumo y repetición</h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El Pop Art se enfoca en la repetición y la circulación de
+                  imágenes en los medios. La celebridad se convierte en un ícono
+                  reproducible, al igual que un producto de supermercado.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>
+                    Andy Warhol produce retratos seriados de Marilyn Monroe.
+                  </li>
+                  <li>
+                    Nace “The Factory”, un espacio de producción artística
+                    colectiva.
+                  </li>
+                  <li>Se refuerza la idea de arte como proceso industrial.</li>
+                  <li>Aparece la crítica a la superficialidad mediática.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-orange"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-orange text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1965 - 1968
+              </div>
+              <h2 class="title-h2-navy">
+                El Pop Art se vuelve tridimensional y urbano
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El movimiento deja la pintura como único soporte y se expande
+                  hacia la escultura, instalaciones y espacios públicos. Se
+                  vuelve más experimental y accesible.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>
+                    Claes Oldenburg crea esculturas gigantes de objetos
+                    cotidianos.
+                  </li>
+                  <li>
+                    James Rosenquist trabaja con composiciones fragmentadas a
+                    gran escala.
+                  </li>
+                  <li>
+                    Se intensifica la relación con la publicidad y el espacio
+                    urbano.
+                  </li>
+                  <li>El arte invade la vida cotidiana.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-celeste"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-celeste text-navy text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                finales 1960s
+              </div>
+              <h2 class="title-h2-navy">Entre consumo y política</h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El contexto social (Guerra de Vietnam, movimientos sociales)
+                  impacta en el arte. Algunos artistas incorporan una mirada más
+                  crítica hacia el poder, los medios y el sistema económico.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Obras más complejas y menos “ligeras”.</li>
+                  <li>
+                    Se mezclan estética publicitaria con contenido político.
+                  </li>
+                  <li>
+                    El Pop Art empieza a perder su carácter inicial más lúdico.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-purple"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-purple text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1970s
+              </div>
+              <h2 class="title-h2-navy">El fin de una etapa</h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El Pop Art deja de ser el movimiento dominante. Surgen nuevas
+                  corrientes como el arte conceptual y el minimalismo, que
+                  desplazan su protagonismo.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Disminuye la producción de obras icónicas.</li>
+                  <li>
+                    El movimiento se institucionaliza (museos, colecciones).
+                  </li>
+                  <li>Pasa de ser vanguardia a referencia histórica.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-full w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-red"></div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-start items-start gap-6 pb-20"
+            >
+              <div
+                class="px-4 py-1 bg-pop-red text-brand-white text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                1980s - 2000s
+              </div>
+              <h2 class="title-h2-navy">
+                Influencia global y reinterpretación
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  Aunque ya no es un movimiento activo, su estética se vuelve
+                  omnipresente. Influye en el diseño gráfico, la moda, la
+                  publicidad y la música.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>
+                    Uso de colores planos, repetición e imágenes populares.
+                  </li>
+                  <li>Inspiración en branding y cultura visual.</li>
+                  <li>Relecturas en el arte contemporáneo.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-12 relative">
+            <div class="absolute left-4 top-0 h-[18px] w-1 bg-navy"></div>
+            <div class="relative z-10 shrink-0">
+              <div class="timeline-bullet bg-pop-yellow"></div>
+            </div>
+            <div class="flex-1 flex flex-col justify-start items-start gap-6">
+              <div
+                class="px-4 py-1 bg-pop-yellow text-navy text-xl font-bold font-sans uppercase tracking-wide"
+              >
+                Actualidad
+              </div>
+              <h2 class="title-h2-navy">
+                Del Pop Art al mundo de los memes
+              </h2>
+              <div class="flex flex-col gap-4">
+                <p class="body-text">
+                  El legacy del Pop Art sigue vigente en la era digital. Las
+                  redes sociales, los memes y la cultura influencer retoman su
+                  lógica de repetición, apropiación y circulación de imágenes.
+                </p>
+                <ul class="list-disc list-inside body-text">
+                  <li>Continuidad del vínculo entre imagen y consumo.</li>
+                  <li>Democratización de la producción visual.</li>
+                  <li>
+                    Nuevas formas de “fama instantánea” (muy en línea con Andy
+                    Warhol).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="section-dark flex items-center justify-between gap-12">
+        <!-- Texto -->
+        <div class="flex-1 flex flex-col gap-5">
+          <p class="label-section text-pop-celeste">Edición mensual</p>
+
+          <h2 class="title-h2-light">Pop Art Magazine</h2>
+
+          <p class="body-text text-brand-white max-w-3xl">
+            Una selección curada de artistas, obras y contextos del Pop Art.
+            Recibí contenido exclusivo, análisis visual y recorridos temáticos
+            en cada edición.
+          </p>
+        </div>
+
+        <!-- Botón -->
+        <a href="contacto.html" class="btn-primary-light">
+          ¡Quiero suscribirme!
+        </a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="w-full px-20 py-6 bg-almost-black flex items-center justify-between"
+      >
+        <!-- Texto -->
+        <p class="text-brand-white text-sm font-display">
+          Copyright © 2026 Iglesias Agency | Todos los derechos reservados
+        </p>
+
+        <!-- Iconos -->
+        <div class="flex items-center gap-4">
+          <a
+            href="https://www.instagram.com/siglesias.portfolio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="text-brand-white hover:text-pop-pink transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/instagram.svg"
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="#"
+            class="text-brand-white hover:text-pop-blue transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/twitter.svg"
+              alt="Twitter"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@sofiiglesiasph"
+            class="text-brand-white hover:text-pop-yellow transition-colors"
+          >
+            <img
+              src="img/Redes Sociales/youtube.svg"
+              alt="Youtube"
+              class="w-6 h-6"
+            />
+          </a>
+        </div>
+      </footer>
+    </main>
+    </main>
+  </body>
+</html>
