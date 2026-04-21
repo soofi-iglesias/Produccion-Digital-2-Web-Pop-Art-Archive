@@ -1,6 +1,6 @@
 console.log("JS cargado");
 
-/* CARRUSEL — Obras icónicas */
+/* CARRUSEL — Obras icónicas (Con rebobinado) */
 
 const track = document.getElementById('carousel-track');
 const prevBtn = document.getElementById('prev');
@@ -13,10 +13,17 @@ if (track && prevBtn && nextBtn) {
 
     function mover(direccion) {
         current += direccion;
-        if (current < 0) current = 0;
-        if (current > total - visibles) current = total - visibles;
+        
+        // Lógica de rebobinado:
+        if (current < 0) {
+            // Si retrocedemos desde el principio, vamos al final
+            current = total - visibles; 
+        } else if (current > total - visibles) {
+            // Si avanzamos desde el final, volvemos al principio
+            current = 0; 
+        }
 
-        const ancho = track.children[0].offsetWidth + 16;
+        const ancho = track.children[0].offsetWidth + 16; // 16 es el gap-4
         track.style.transform = `translateX(-${current * ancho}px)`;
     }
 

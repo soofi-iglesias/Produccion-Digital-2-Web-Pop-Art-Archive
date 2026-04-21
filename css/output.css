@@ -1659,6 +1659,36 @@ html {
      object-fit: cover;
 }
 
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-\[25\%_75\%\] {
+  -o-object-position: 25% 75%;
+     object-position: 25% 75%;
+}
+
+.object-\[50\%_75\%\] {
+  -o-object-position: 50% 75%;
+     object-position: 50% 75%;
+}
+
+.object-\[50\%_0\%\] {
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
+
+.object-\[50\%_20\%\] {
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+}
+
+.object-\[50\%_15\%\] {
+  -o-object-position: 50% 15%;
+     object-position: 50% 15%;
+}
+
 .p-20 {
   padding: 5rem;
 }
